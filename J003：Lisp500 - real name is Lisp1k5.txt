@@ -1,0 +1,41 @@
+﻿J003：Lisp500 - real name is Lisp1k5
+
+   http://modeemi.cs.tut.fi/~chery/lisp500/
+
+原始檔的網址已經失效，只好從時間機器找。
+
+   https://web.archive.org/web/20040305005602/http://modeemi.cs.tut.fi/~chery/lisp500/
+
+安裝使用說明請参考網頁，在此不贅述。
+
+由於這是参加隱碼競賽，所以此檔傷眼不能明察，不似 otcc 附有明碼，可以研究程式碼。
+
+   https://bellard.org/otcc/
+
+如果只是要用以寫寫程式，就下載 lisp500.c 與 init500.lsp 兩檔，然後編譯執行即可。
+
+   https://web.archive.org/web/20040305005602/http://modeemi.cs.tut.fi/~chery/lisp500/lisp500.c
+
+   https://web.archive.org/web/20040305104156/http://modeemi.cs.tut.fi/~chery/lisp500/init500.lisp
+
+   Chrome 右鍵選單，另存新檔，即可下載。(記得要去掉 .txt)
+
+若想要研究一下，看看結構流程，就要恢復成正常的程式風貌，也就是美化 beautifier。
+
+   # Best C Formatter and Beautifier
+   https://codebeautify.org/c-formatter-beautifier
+
+       lisp500.c  ->  lisp500-p.c
+
+   # use GNU indent -kr option
+
+       .\indent.exe -kr lisp500.c -o lisp500-kr.c
+
+   下載 GNUWin32 - Indent
+   https://sourceforge.net/projects/gnuwin32/files/indent/2.2.10/indent-2.2.10-setup.exe
+
+即便美化了，但是隱碼用了大量的結構巨集，美化了不完美，所以仍需人工編修校對。
+
+計算一下最後行數：1775 去掉空白行跟括號行，粗估 1500 以上，所以正名為：Lisp1k5
+
+   https://github.com/jans0204/J003-Lisp500---real-name-is-Lisp1k5
